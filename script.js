@@ -21,6 +21,21 @@ function linkAction() {
 }
 navLink.forEach(n => n.addEventListener('click', linkAction))
 
+// remove navbar when user click in the outside
+window.addEventListener("click", function (el) {
+    if (el.target == window) {
+        navMenu.forEach(function (e) {
+            navMenu.classList.remove("show-menu");
+        })
+    }
+})
+
+// sticky effect for nav bar
+const nav = document.querySelector(".nav");
+window.addEventListener("scroll", () => {
+    nav.classList.toggle("sticky", window.scrollY > 100);
+})
+
 // Modal
 const modalViews = document.querySelectorAll(".services-modal");
 const modalBtn = document.querySelectorAll(".viewMoreBtn");
