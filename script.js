@@ -1,3 +1,13 @@
+// loader
+const loader = document.querySelector(".loader");
+
+window.addEventListener("load", () => {
+    setTimeout(() => {
+        loader.classList.add("dissapear");
+    }, 3500)
+})
+
+
 const closeBtn = document.querySelector(".close-btn");
 const toggleBtn = document.querySelector(".toggle-btn");
 const navMenu = document.querySelector(".nav-menu");
