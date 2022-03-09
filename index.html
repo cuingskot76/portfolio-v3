@@ -688,6 +688,15 @@
     <!-- gsap -->
     <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/3.9.1/gsap.min.js"></script>
     <script>
+        // loader
+        const loader = document.querySelector(".loader");
+
+        window.addEventListener("load", () => {
+            setTimeout(() => {
+                loader.classList.add("dissapear");
+            }, 3500)
+        })
+
         gsap.from(".home-img img", {
             duration: 1,
             opacity: 0,
