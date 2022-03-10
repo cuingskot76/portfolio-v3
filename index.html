@@ -605,36 +605,20 @@
     <!-- main script -->
     <script src="script.js"></script>
 
+    <!-- typed -->
+    <script src="typed.js"></script>
+    <script>
+        let typed = new Typed('.typed', {
+            strings: ["Student", "Web Developer", "Designer", "Freelancer"],
+            typeSpeed: 100,
+            backSpeed: 70,
+            loop: true,
+        });
+    </script>
+
     <!-- swiper -->
     <script src="https://unpkg.com/swiper@7/swiper-bundle.min.js"></script>
     <script>
-        // version 1
-        // var swiper = new Swiper(".swiper-container", {
-        // spaceBetween: 30,
-        // centeredSlides: true,
-        // loop: true,
-        // autoplay: {
-        // delay: 2500,
-        // disableOnInteraction: false,
-        // },
-        // pagination: {
-        // el: ".swiper-pagination",
-        // clickable: true,
-        // dynamicBullets: true,
-        // },
-        // breakpoints: {
-        // 768: {
-        // slidesPerView: 2,
-
-        // },
-        // 992: {
-        // slidesPerView: 3,
-        // // spaceBetween: 30,
-        // }
-        // }
-        // });
-
-        // version 2
         var swiper = new Swiper(".swiper-container", {
             loop: true,
             autoplay: {
@@ -659,23 +643,22 @@
         });
     </script>
 
-    <!-- typed -->
-    <script src="typed.js"></script>
-    <script>
-        let typed = new Typed('.typed', {
-            // Waits 1000ms after typing "First"
-            strings: ["Student", "Web Developer", "Designer", "Freelancer"],
-            typeSpeed: 100,
-            backSpeed: 70,
-            loop: true,
-        });
-    </script>
-
     <!-- aos -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script>
         AOS.init({
             once: true,
+        });
+    </script>
+
+    <!-- tilt -->
+    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+        VanillaTilt.init(document.querySelectorAll(".services-content"), {
+            max: 30,
+            speed: 1000,
+            scale: 1.1,
+            glare: true,
         });
     </script>
 
@@ -747,47 +730,8 @@
         })
     </script>
 
-    <!-- tilt -->
-    <script type="text/javascript" src="js/vanilla-tilt.min.js"></script>
-    <script type="text/javascript">
-        VanillaTilt.init(document.querySelectorAll(".services-content"), {
-            max: 30,
-            speed: 1000,
-            scale: 1.1,
-            glare: true,
-        });
-    </script>
-
     <!-- animation contact -->
     <script src="https://unpkg.com/@lottiefiles/lottie-player@latest/dist/lottie-player.js"></script>
-
-    <!-- sweetalert -->
-    <script src="//cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script>
-        let timerInterval
-        Swal.fire({
-            title: "For best experience, We recommend you to open it in chrome browser",
-            text: "ya",
-            html: 'I will close in <b></b> milliseconds.',
-            timer: 4000,
-            timerProgressBar: true,
-            didOpen: () => {
-                Swal.showLoading()
-                const b = Swal.getHtmlContainer().querySelector('b')
-                timerInterval = setInterval(() => {
-                    b.textContent = Swal.getTimerLeft()
-                }, 100)
-            },
-            backdrop: `
-              rgb(135, 133, 162)
-              left top
-              no-repeat
-              `,
-            willClose: () => {
-                clearInterval(timerInterval)
-            }
-        })
-    </script>
 </body>
 
 </html>
