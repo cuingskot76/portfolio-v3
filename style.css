@@ -266,7 +266,6 @@ span {
 
 .about-me-img {
     text-align: center;
-    transform: rotate(90deg);
 }
 
 .about-me-img img {
@@ -289,7 +288,7 @@ span {
     justify-content: center;
 }
 
-.about-me-data li {
+.about-me-data .about-me-data-info {
     padding: 0 20px;
     margin: 20px 0;
 }
@@ -505,12 +504,12 @@ span {
     color: crimson;
 }
 
-.services-modal li {
+.services-modal .services-modal-info {
     display: flex;
     align-items: center;
 }
 
-.services-modal li p {
+.services-modal .services-modal-info p {
     padding-left: 5px;
 }
 
@@ -920,7 +919,8 @@ figcaption:hover .view-more {
     text-align: center;
     justify-content: center;
     align-items: center;
-    font-size: 1rem;
+    font-size: 1.1rem;
+    font-weight: 700;
 }
 
 .footer-container p {
@@ -1051,7 +1051,7 @@ figcaption:hover .view-more {
         width: 300px;
     }
 
-    .about-me-data li {
+    .about-me-data .about-me-data-info {
         padding: 0 20px;
         margin: 15px 0;
     }
