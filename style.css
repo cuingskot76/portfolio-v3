@@ -33,7 +33,7 @@ h4 {
 }
 
 :root {
-    --first-color: #8785A2;
+    --first-color: rgb(135, 133, 162);
     --second-color: #A8D8EA;
     --third-color: #196988;
     --fiveth-color: #716F81;
@@ -58,7 +58,7 @@ h4 {
     text-align: center;
 }
 
-.loader {
+/* .loader {
     background-color: var(--white-color);
     position: fixed;
     top: 0;
@@ -73,7 +73,7 @@ h4 {
 
 .dissapear {
     display: none;
-}
+} */
 
 header {
     position: fixed;
