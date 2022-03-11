@@ -1,4 +1,4 @@
-/* @import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap'); */
+@import url('https://fonts.googleapis.com/css2?family=Poppins&display=swap');
 
 * {
     margin: 0;
@@ -57,23 +57,6 @@ h4 {
     flex-direction: column;
     text-align: center;
 }
-
-/* .loader {
-    background-color: var(--white-color);
-    position: fixed;
-    top: 0;
-    left: 0;
-    right: 0;
-    bottom: 0;
-    z-index: 9;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.dissapear {
-    display: none;
-} */
 
 header {
     position: fixed;
@@ -257,7 +240,8 @@ span {
 }
 
 .home-img img {
-    width: 200px;
+    width: 180px;
+    height: 100%;
 }
 
 /* Akhir Home */
@@ -272,6 +256,7 @@ span {
     border-radius: 10px;
     margin-bottom: 10px;
     width: 250px;
+    height: 100%;
 }
 
 .about-me-experience {
@@ -582,6 +567,7 @@ span {
 
 .item-box img {
     width: 250px;
+    height: 100%;
 }
 
 .item-box figure {
@@ -754,6 +740,7 @@ figcaption:hover .view-more {
 
 .testimonials-head-img img {
     width: 110px;
+    height: 110px;
     padding: 5px 15px 15px 10px;
     border-radius: 50%;
 }
@@ -793,7 +780,8 @@ figcaption:hover .view-more {
 }
 
 .new-project-img img {
-    width: 350px;
+    width: 300px;
+    height: 100%;
 }
 
 
