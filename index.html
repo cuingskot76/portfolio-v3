@@ -674,6 +674,56 @@
             delay: 1.5,
             ease: "elastic"
         });
+
+        // Animation for Lottie
+        let tl = new gsap.timeline({
+            defaults: {
+                ease: Circ.easeOut,
+            }
+        })
+        let cta = document.querySelector(".cta");
+        const player = document.querySelector(".lottie-success");
+
+        tl.paused(true);
+
+        tl.to(".contact-content", {
+            // opacity: 0,
+            display: "none",
+        });
+
+        const contactInput = document.querySelector(".contact-input");
+        cta.addEventListener("click", () => {
+            tl.play();
+            player.play()
+
+            // show the lottie animation
+            setTimeout(() => {
+                player.setAttribute("style", "visibility: visible");
+            }, 800);
+
+            // show info 
+            setTimeout(() => {
+                tl.to(".info-success", {
+                    opacity: 1,
+                    y: 20,
+                })
+            }, 5500);
+
+            // removed lottie animation and info
+            setTimeout(() => {
+                player.setAttribute("style", "visibility: hidden");
+                tl.to(".info-success", {
+                    opacity: 0,
+                })
+            }, 8000);
+
+            // add info
+            setTimeout(() => {
+                tl.to(".info-success-p2", {
+                    opacity: 1,
+                })
+            }, 9000);
+        })
     </script>
 
     <!-- tilt -->
