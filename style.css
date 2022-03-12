@@ -153,25 +153,19 @@ span {
 
 .home-jumbotron {
     display: flex;
-    justify-content: center;
     align-items: center;
     flex-direction: column-reverse;
-
 }
 
 .home-social {
     display: flex;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-    margin: 10px 0 20px 0;
 }
 
 .home-social .icon-link {
     padding: 7px;
     margin: 5px;
-    width: 50px;
-    height: 50px;
+    width: 55px;
+    height: 55px;
     border-radius: 50%;
     background: #e0e0e0;
     box-shadow: inset 9px 9px 18px #bebebe,
@@ -187,10 +181,9 @@ span {
 }
 
 .home-social .icon-link .icon-social {
-    font-size: 1.8rem;
+    font-size: 1.5rem;
     width: 100%;
     height: 100%;
-    display: block;
     border-radius: 50%;
     align-items: center;
     justify-content: center;
@@ -218,20 +211,12 @@ span {
     color: #1d1a1a;
 }
 
-.home-data .hello {
-    display: flex;
-    align-items: center;
-    position: relative;
-    margin-bottom: .2rem;
-}
 
 .gift-hand {
-    width: 70px;
-    height: 70px;
-    display: flex;
-    align-items: center;
+    width: 60px;
+    height: 60px;
     position: absolute;
-    top: -1.8rem;
+    top: -1.4rem;
     left: 5rem;
 }
 
@@ -263,7 +248,6 @@ span {
     display: flex;
     text-align: center;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
 }
 
@@ -278,11 +262,10 @@ span {
     margin: 20px 0;
 }
 
-/* ! icon and button*/
 .icon {
     font-size: 1.5rem;
     color: var(--icon-color);
-    padding-left: 5px;
+    padding-left: 10px;
 }
 
 .icon-service {
@@ -293,13 +276,13 @@ span {
     background-color: var(--third-color);
     padding: 1rem;
     border-radius: .5rem;
-    transition: all .3s;
     color: white;
     display: flex;
     align-items: center;
-    margin-top: 10px;
     border: none;
     cursor: pointer;
+    transition: all .3s;
+    margin-top: .5rem;
 }
 
 .button:hover {
@@ -317,20 +300,12 @@ span {
 }
 
 .button-left {
-    align-items: flex-start;
     display: flex;
 }
 
 /* Akhir About-me */
 
 /* Skill */
-
-.skill-info {
-    padding: 20px 0;
-    display: flex;
-    text-align: center;
-    flex-direction: column;
-}
 
 .skill-bar {
     margin-bottom: 20px;
@@ -340,8 +315,7 @@ span {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    text-align: center;
-    margin-bottom: 10px;
+    margin-bottom: 5px;
 }
 
 .skill-persent {
@@ -369,13 +343,13 @@ span {
     position: relative;
     width: 210px;
     height: 250px;
-    margin-top: 30px;
-    border-radius: 7px;
+    margin-top: 20px;
+    border-radius: .5rem;
     box-shadow: inset 5px 5px 5px rgba(0, 0, 0, 0.05),
         inset -5px -5px 5px rgba(255, 255, 255, 0.5),
         5px 5px 5px rgba(0, 0, 0, 0.05),
         -5px -5px 5px rgba(255, 255, 255, 0.5);
-    transition: all .5s;
+    transition: all .3s;
 }
 
 .service-content:hover .services-content {
@@ -393,11 +367,9 @@ span {
     padding-top: 20px;
     background-color: var(--white-color);
     box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
-    border-radius: 10px;
-    transition: all .5s;
+    border-radius: .5rem;
+    transition: all .3s;
     align-items: center;
-    text-align: center;
-    justify-content: center;
     transform-style: preserve-3d;
 }
 
@@ -422,7 +394,6 @@ span {
 .button-services {
     display: flex;
     justify-content: center;
-    position: relative;
     transform: translate3d(0, 0, 50px);
 }
 
@@ -459,7 +430,7 @@ span {
     justify-content: center;
     padding: 0 2rem;
     visibility: hidden;
-    z-index: 999999999999;
+    z-index: 3;
 }
 
 .services-modal.active-modal {
@@ -468,17 +439,16 @@ span {
 }
 
 .services-modal-content {
-    position: relative;
-    background-color: var(--white-color);
     padding: 1.5rem;
-    border-radius: 10px;
+    border-radius: .6rem;
+    background-color: var(--white-color);
 }
 
 .services-modal-head {
     display: flex;
     align-items: center;
     justify-content: space-between;
-    margin-bottom: 15px;
+    margin-bottom: 10px;
 }
 
 .services-modal-head .close {
@@ -489,12 +459,12 @@ span {
     color: crimson;
 }
 
-.services-modal .services-modal-info {
+.services-modal-info {
     display: flex;
     align-items: center;
 }
 
-.services-modal .services-modal-info p {
+.services-modal-info p {
     padding-left: 5px;
 }
 
@@ -502,19 +472,18 @@ span {
 
 /* Gallery */
 
-/* ?Active Class */
-.gallery-content-list .list-gallery.active {
+.list-gallery.active {
     background-color: var(--first-color);
     color: white;
     transition: all .5s;
     border-radius: 3px;
 }
 
-.gallery-content-list .list-gallery.active:hover {
+.list-gallery.active:hover {
     transform: scale(1.1);
 }
 
-.gallery-content-list .list-gallery.active:hover::before {
+.list-gallery.active:hover::before {
     width: 0;
 }
 
@@ -524,7 +493,6 @@ span {
 
 .gallery-content-list {
     display: flex;
-    flex-direction: row;
     justify-content: center;
     flex-wrap: wrap;
     margin-bottom: 50px;
@@ -553,14 +521,13 @@ span {
 .gallery-product {
     display: flex;
     flex-wrap: wrap;
-    align-items: center;
     justify-content: center;
 }
 
 .item-box {
     padding-bottom: 20px;
     margin-bottom: 25px;
-    border-bottom: 1px solid #ddd;
+    border-bottom: 1px solid #bbb;
     margin-left: 40px;
     transition: all 1s;
 }
@@ -570,9 +537,7 @@ span {
     height: 100%;
 }
 
-.item-box figure {
-    display: flex;
-    flex-direction: column;
+.item-box .figure-gallery {
     position: relative;
 }
 
@@ -618,16 +583,14 @@ figcaption:hover .view-more {
     border-radius: 7px;
     margin: 0 auto;
     padding: 3px 15px;
-    margin-top: 10px;
+    margin-top: 5px;
     transition: all .3s;
 }
 
 .item-box .view-more:hover {
     transform: scale(1.1);
     background-color: var(--first-color);
-
 }
-
 
 .item-box.hide {
     display: none;
@@ -644,8 +607,8 @@ figcaption:hover .view-more {
     }
 
     100% {
-        transform: scale(1);
         opacity: 1;
+        transform: scale(1);
     }
 }
 
@@ -705,8 +668,7 @@ figcaption:hover .view-more {
 
 .testimonials-content::before,
 .testimonials-content::after {
-    content: "";
-    font-family: sans-serif;
+    font-family: Arial, Helvetica, sans-serif;
     position: relative;
     color: gray;
 }
@@ -798,7 +760,6 @@ figcaption:hover .view-more {
     display: flex;
     justify-content: center;
     align-items: center;
-    text-align: center;
     flex-wrap: wrap;
     margin-top: -20rem;
 }
@@ -826,20 +787,11 @@ figcaption:hover .view-more {
 }
 
 .contact-success {
-    /* ! */
     margin-top: 5rem;
     display: flex;
     flex-direction: column;
     align-items: center;
     visibility: hidden;
-
-    /* ! */
-    /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    left: 0; */
-    /* position: absolute; */
-    /* visibility: hidden; */
 }
 
 
@@ -863,22 +815,6 @@ figcaption:hover .view-more {
     margin-bottom: 5rem;
 }
 
-.contact-icon {
-    display: flex;
-    align-items: center;
-    margin-top: 20px;
-    flex-wrap: wrap;
-    margin-bottom: 2rem;
-}
-
-.icon-contact {
-    font-size: 1.8rem;
-}
-
-.contact-name {
-    padding-left: 10px;
-}
-
 .contact-field {
     display: flex;
     flex-direction: column;
@@ -886,7 +822,6 @@ figcaption:hover .view-more {
     border-radius: 10px;
     background-color: gainsboro;
     margin-bottom: 20px;
-
 }
 
 .contact-input {
@@ -901,10 +836,9 @@ figcaption:hover .view-more {
     padding-bottom: 5rem;
 }
 
-.footer-container .footer-content {
+.footer-content {
     display: flex;
     flex-wrap: wrap;
-    text-align: center;
     justify-content: center;
     align-items: center;
     font-size: 1.1rem;
@@ -939,7 +873,6 @@ figcaption:hover .view-more {
         width: 100%;
     }
 }
-
 
 /* * Tablet Portrait */
 @media screen and (min-width: 768px) {
@@ -1179,7 +1112,6 @@ figcaption:hover .view-more {
 
     /* *newProject */
     .new-project-container {
-        /* margin: 5rem; */
         padding: 0 2rem;
         display: grid;
         grid-template-columns: 1fr max-content;
