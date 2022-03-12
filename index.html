@@ -82,7 +82,7 @@
                     <img src="img/imgPortoFIRST.webp" alt="my-profile">
                 </div>
             </div>
-            <div class="home-data">
+            <div class="home-data" data-aos="zoom-in">
                 <h2>Hi, there
                     <lottie-player class="gift-hand" src="https://assets8.lottiefiles.com/packages/lf20_xjylpbj3.json"
                         background="transparent" loop autoplay>
@@ -669,12 +669,12 @@
             delay: .5,
 
         });
-        gsap.from(".home-data", {
-            duration: 1.5,
-            opacity: 0,
-            x: "-200px",
-            ease: "elastic"
-        });
+        // gsap.from(".home-data", {
+        //     duration: 1.5,
+        //     opacity: 0,
+        //     x: "-200px",
+        //     ease: "elastic"
+        // });
 
         // Animation for Lottie
         let tl = new gsap.timeline({
